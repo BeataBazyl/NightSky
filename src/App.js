@@ -1,20 +1,19 @@
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import Home from "./components/Home"
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router} from "react-router-dom";
+import Home from "./pages/Home";
+import Moon from "./pages/Moon";
+import Essentials from "./pages/Essentials";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </BrowserRouter>
         <Router>
             <Navbar/>
             <Switch>
-                <Route path="/"/>
+                <Route path="/" exact component={Home}/>
+                <Route path="/moon" component={Moon}/>
+                <Route path="/essentials" component={Essentials}/>
             </Switch>
         </Router>
     </>
