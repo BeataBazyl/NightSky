@@ -3,7 +3,7 @@ import React from 'react';
 function Moon() {
     return (
         <div className="moon">
-            <h1>Moon</h1>
+            <h1></h1>
         </div>
     );
 };
