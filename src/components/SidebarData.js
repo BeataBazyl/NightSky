@@ -27,7 +27,7 @@ export const SidebarData = [
     },
     {
         title: "Gallery",
-        path:"/gallery",
+        path:"/slider",
         icon: <BsIcons.BsImageFill />,
         cName: "nav-text"
     },

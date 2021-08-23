@@ -3,8 +3,10 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import {Link} from "react-router-dom";
 import { SidebarData} from "./SidebarData";
-import "./Navbar.css";
+import ".././Styles/elements/_navbar.scss";
 import {IconContext} from "react-icons";
+import * as WiIcons from "react-icons/wi";
+
 
 function Navbar () {
     const [sidebar, setSidebar] = useState(false)
@@ -18,6 +20,11 @@ function Navbar () {
                 <Link to="#" class="menu-bars">
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
+                <div className="sideLogo">
+                <WiIcons.WiMoonAltWaxingGibbous3 fontSize="2rem"/><div className="logo">
+                    Night Sky
+                </div>
+                </div>
             </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items" onClick={showSidebar}>
