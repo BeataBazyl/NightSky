@@ -1,5 +1,5 @@
 export const homeObject = {
-    id: "about",
+    id: "essentials",
     lightBg: false,
     lightText: true,
     lightDesc: true,
@@ -17,7 +17,7 @@ export const homeObject = {
 };
 
 export const homeObjectTwo = {
-    id: "discover",
+    id: "moon",
     lightBg: true,
     lightText: false,
     lightDesc: true,
@@ -34,7 +34,7 @@ export const homeObjectTwo = {
 };
 
 export const homeObjectThree = {
-    id: "about",
+    id: "magic",
     lightBg: false,
     lightText: true,
     lightDesc: false,
@@ -48,4 +48,21 @@ export const homeObjectThree = {
     dark: true,
     primary: true,
     darkText: false,
+};
+
+export const homeObjectFour = {
+    id: "slider",
+    lightBg: true,
+    lightText: false,
+    lightDesc: true,
+    topLine: "If you still need some inspiration...",
+    headline: "Do not hesitate and check out our gallery of amazing photos of night sky, milky way and moon!",
+    description: "Just get inspired for your first attempts at night photography",
+    buttonLabel: "Discover",
+    imgStart: true,
+    img: require("../../images/svg-7.svg").default,
+    alt: "Gallery",
+    dark: false,
+    primary: true,
+    darkText: true,
 };

@@ -3,6 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as GiIcons from "react-icons/gi";
+import * as RiIcons from "react-icons/ri";
 
 
 
@@ -29,6 +30,12 @@ export const SidebarData = [
         title: "Gallery",
         path:"/slider",
         icon: <BsIcons.BsImageFill />,
+        cName: "nav-text"
+    },
+    {
+        title: "Add Some Magic",
+        path:"/magic",
+        icon: <RiIcons.RiMagicLine />,
         cName: "nav-text"
     },
     {

@@ -28,7 +28,7 @@ const StarsIntro = () => {
                 <StarsH1>Are you redy to be inspired?</StarsH1>
                 <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
             <StarsBtnWrapper>
-                <Button to="essentials"
+                <Button to="home"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"

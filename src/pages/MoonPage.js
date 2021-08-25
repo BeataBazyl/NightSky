@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Moon() {
+function MoonPage() {
     return (
         <div className="moon">
             <h1>Moon</h1>
@@ -8,4 +8,4 @@ function Moon() {
     );
 }
 
-export default Moon;
+export default MoonPage;

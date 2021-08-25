@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Slider() {
+function SliderPage() {
     return (
         <div className="slider">
             <h1></h1>
@@ -8,4 +8,4 @@ function Slider() {
     );
 };
 
-export default Slider;
+export default SliderPage;
