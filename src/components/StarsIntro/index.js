@@ -1,13 +1,22 @@
 import React, {useState} from 'react';
 import Video from "../../videos/video.mp4";
-import {StarsContainer, StarsBg, VideoBg, StarsContent, StarsH1, StarsBtnWrapper, StarsP, ArrowForward, ArrowRight } from "./StarsIntro";
-import {Button} from "../ButtonElement";
+import {
+    StarsContainer,
+    StarsBg,
+    VideoBg,
+    StarsContent,
+    StarsH1,
+    StarsBtnWrapper,
+    StarsP,
+    ArrowForward,
+    ArrowRight } from "./StarsIntro";
+import {Button} from "../ButtonElements";
 
 const StarsIntro = () => {
-    const [hover, setHover] = useState(false)
+    const [hover, setHover] = useState(false);
 
     const onHover = () => {
-        setHover(!hover)
+        setHover(!hover);
     }
 
     return (
@@ -19,8 +28,11 @@ const StarsIntro = () => {
                 <StarsH1>Are you redy to be inspired?</StarsH1>
                 <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
             <StarsBtnWrapper>
-                <Button to="signup" onMouseEnter={onHover}
-                        onMouseLeave={onHover}>
+                <Button to="essentials"
+                        onMouseEnter={onHover}
+                        onMouseLeave={onHover}
+                        primary="true"
+                        dark="true">
                     Read more and get started {hover ? <ArrowForward/> : <ArrowRight/>}
                 </Button>
             </StarsBtnWrapper>

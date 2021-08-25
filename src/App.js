@@ -1,4 +1,4 @@
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {Switch, Route, Link} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import {BrowserRouter as Router} from "react-router-dom";
 import Home from "./pages/Home";
@@ -6,6 +6,8 @@ import Moon from "./pages/Moon";
 import Essentials from "./pages/Essentials";
 import Slider from "./pages/Slider";
 import StarsIntro from "./components/StarsIntro";
+import InfoSection from "./components/InfoSection";
+import {homeObject, homeObjectTwo, homeObjectThree} from "./components/InfoSection/Data";
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
             </Switch>
         </Router>
         <StarsIntro/>
+        <InfoSection {...homeObject}/>
+        <InfoSection {...homeObjectTwo}/>
+        <InfoSection {...homeObjectThree}/>
     </>
   );
 }
