@@ -2,22 +2,22 @@ import React from 'react';
 
 const slides = [
     {
-        title: "Night sky",
-        subtitle: "Nepal",
-        description: "Scenic View Of Mountain During Evening",
+        title: "Panoramic View Of A Lake Under A Starry Sky",
+        subtitle: "Pixabay",
+        description: "Lens 24.0mm ƒ/1.8 20/1s",
         image:
-            "https://images.pexels.com/photos/2085998/pexels-photo-2085998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            "https://images.pexels.com/photos/262669/pexels-photo-262669.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
-        title: "Milky way",
-        subtitle: "Unknown",
-        description: "Scenic View Of Night Sky",
+        title: "Milky Way Photography",
+        subtitle: "Nicole Avagliano",
+        description: "Lens 18.0mm ƒ/3.5 ISO 6400",
         image:
-            "https://images.pexels.com/photos/3934514/pexels-photo-3934514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            "https://images.pexels.com/photos/2312040/pexels-photo-2312040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
         title: "Full Moon Illustration",
-        subtitle: "Australia",
+        subtitle: "Unknown",
         description: "Lens 129.0mm ƒ/6.3 1/160s ISO 80",
         image:
             "https://images.pexels.com/photos/684441/pexels-photo-684441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -30,12 +30,40 @@ const slides = [
             "https://images.pexels.com/photos/2888489/pexels-photo-2888489.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
-        title: "Purple Nebula",
-        subtitle: "Unknown",
-        description: "Unknown",
+        title: "Time Lapse Photography of Stars",
+        subtitle: "Marek Piwnicki",
+        description: "Lens 19.0mm ƒ/4.0 933.0s ISO",
         image:
             "https://images.pexels.com/photos/262750/pexels-photo-262750.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-    }
+    },
+    {
+        title: "Photo of Supernova in Galaxy",
+        subtitle: "Alex Andrews",
+        description: "Lens 400.0mm ƒ/5.6 4050.0s ISO 6400",
+        image:
+            "https://images.pexels.com/photos/3805983/pexels-photo-3805983.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        title: "Man in Black Jacket and Black Pants Standing on Road during Night Time",
+        subtitle: "Ken Cheung",
+        description: "Lens 24.0mm ƒ/1.4 15.0s ISO 3200",
+        image:
+            "https://images.pexels.com/photos/6258535/pexels-photo-6258535.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        title: "Body of Water Near Mountain Under Starry Night",
+        subtitle: "Janik Butz",
+        description: "Lens unknown",
+        image:
+            "https://images.pexels.com/photos/5366526/pexels-photo-5366526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        title: "Person Standing Under A Rock Formation On A Starry Night",
+        subtitle: "Pixabay",
+        description: "Lens 20.0mm ƒ/2.2 25/1s ISO 2500",
+        image:
+            "https://images.pexels.com/photos/33688/delicate-arch-night-stars-landscape.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
 ];
 
 function useTilt(active) {
@@ -85,13 +113,13 @@ const initialState = {
 };
 
 const slidesReducer = (state, event) => {
-    if (event.type === "NEXT") {
+    if (event.type === "PREV") {
         return {
             ...state,
             slideIndex: (state.slideIndex + 1) % slides.length
         };
     }
-    if (event.type === "PREV") {
+    if (event.type === "NEXT") {
         return {
             ...state,
             slideIndex:
