@@ -3,10 +3,7 @@ import Navbar from "./components/Navbar";
 import {BrowserRouter as Router} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MoonPage from "./pages/MoonPage";
-import SliderPage from "./pages/SliderPage";
 import StarsIntro from "./components/StarsIntro";
-import InfoSection from "./components/InfoSection";
-import {homeObject, homeObjectTwo, homeObjectThree, homeObjectFour} from "./components/InfoSection/Data";
 import Essentials from "./components/Essentials";
 import MagicPage from "./pages/MagicPage";
 import Slider from "./components/Slider";
@@ -24,12 +21,6 @@ function App() {
                 <Route path="/slider" component={Slider} />
             </Switch>
         </Router>
-        <StarsIntro/>
-        <InfoSection {...homeObject}/>
-        <InfoSection {...homeObjectTwo}/>
-        <InfoSection {...homeObjectThree}/>
-        <Essentials/>
-        <InfoSection {...homeObjectFour}/>
     </>
   );
 }

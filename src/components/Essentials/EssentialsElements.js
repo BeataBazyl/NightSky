@@ -52,6 +52,7 @@ export const EssentialsCard = styled.div`
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+    z-index: 1;
   }
 `
 export const EssentialsIcon = styled.img `
