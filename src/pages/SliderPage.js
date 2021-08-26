@@ -1,11 +1,13 @@
 import React from 'react';
+import Slider from "../components/Slider";
+import "../Styles/elements/_slider.scss";
 
 function SliderPage() {
     return (
-        <div className="slider">
-            <h1></h1>
-        </div>
+        <>
+            <Slider/>
+        </>
     );
-};
+}
 
 export default SliderPage;

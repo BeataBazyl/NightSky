@@ -10,6 +10,7 @@ const Essentials = () => {
         <EssentialsContainer id="essentials">
             <EssentialsH1>What will you need to start?</EssentialsH1>
             <EssentialsWrapper>
+                <article>
                 <EssentialsCard>
                     <EssentialsIcon src={Icon1}/>
                     <EssentialsH2>Did you know that you can make great photos even with your smartphone?</EssentialsH2>
@@ -17,18 +18,23 @@ const Essentials = () => {
                         you need to find appropriate settings manualy - your efford will be seen so soon! </EssentialsP>
                     <Button>Learn more</Button>
                 </EssentialsCard>
+                </article>
+                <article>
                 <EssentialsCard>
                     <EssentialsIcon src={Icon2}/>
                     <EssentialsH2>Do you have SLR camera? Good for you!</EssentialsH2>
                     <EssentialsP>Remember to create RAW photos so you will be able easily work at perfect photo at postproduction. Use manual focuse and don't ever forget to take your tripod for nights photos adventure!  </EssentialsP>
                     <Button>Learn more</Button>
                 </EssentialsCard>
+                </article>
+                <article>
                 <EssentialsCard>
                     <EssentialsIcon src={Icon3}/>
                     <EssentialsH2>Are you in possession of a telescope? </EssentialsH2>
                     <EssentialsP>Great! You can become a professional night sky hunter! You are able to photograph planets, nebulae and much more. Check what else equipment a professional needs!</EssentialsP>
                     <Button>Learn more</Button>
                 </EssentialsCard>
+                </article>
             </EssentialsWrapper>
         </EssentialsContainer>
     );

@@ -20,6 +20,8 @@ const StarsIntro = () => {
     }
 
     return (
+        <>
+        <main>
         <StarsContainer id="home">
             <StarsBg>
                 <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
@@ -38,6 +40,8 @@ const StarsIntro = () => {
             </StarsBtnWrapper>
             </StarsContent>
         </StarsContainer>
+        </main>
+        </>
     );
 };
 

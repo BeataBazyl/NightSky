@@ -9,6 +9,7 @@ import InfoSection from "./components/InfoSection";
 import {homeObject, homeObjectTwo, homeObjectThree, homeObjectFour} from "./components/InfoSection/Data";
 import Essentials from "./components/Essentials";
 import MagicPage from "./pages/MagicPage";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
                 <Route path="/moon" component={MoonPage}/>
                 <Route path="/essentials" component={Essentials}/>
                 <Route path="/magic" component={MagicPage}/>
-                <Route path="/slider" component={SliderPage} />
+                <Route path="/slider" component={Slider} />
             </Switch>
         </Router>
         <StarsIntro/>
