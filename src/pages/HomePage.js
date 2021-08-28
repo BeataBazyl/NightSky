@@ -1,8 +1,8 @@
 import React from 'react';
 import InfoSection from "../components/InfoSection";
 import {homeObject, homeObjectFour, homeObjectThree, homeObjectTwo} from "../components/InfoSection/Data";
-import Essentials from "../components/Essentials";
 import StarsIntro from "../components/StarsIntro";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
     return (
@@ -11,8 +11,8 @@ const HomePage = () => {
             <InfoSection {...homeObject}/>
             <InfoSection {...homeObjectTwo}/>
             <InfoSection {...homeObjectThree}/>
-            <Essentials/>
             <InfoSection {...homeObjectFour}/>
+            <Footer/>
         </div>
     );
 };

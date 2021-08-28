@@ -7,24 +7,23 @@ import ".././Styles/elements/_navbar.scss";
 import {IconContext} from "react-icons";
 import * as WiIcons from "react-icons/wi";
 
-
 function Navbar () {
     const [sidebar, setSidebar] = useState(false)
 
     const showSidebar = () => setSidebar(!sidebar)
 
     return (
-        <>
-            <IconContext.Provider value={{color:"#fff"}}>
+        <IconContext.Provider value={{color:"#fff"}}>
             <div className="navbar">
                 <Link to="#" class="menu-bars">
                     <FaIcons.FaBars onClick={showSidebar}/>
                 </Link>
-                <div className="sideLogo">
-                <WiIcons.WiMoonAltWaxingGibbous3 fontSize="2rem"/><div className="logo">
-                    Night Sky
-                </div>
-                </div>
+                  <div className="sideLogo">
+                    <WiIcons.WiMoonAltWaxingGibbous3 fontSize="2rem"/>
+                    <div className="logo">
+                        Night Sky
+                    </div>
+                 </div>
             </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items" onClick={showSidebar}>
@@ -33,7 +32,7 @@ function Navbar () {
                             <AiIcons.AiOutlineClose/>
                         </Link>
                     </li>
-                    {SidebarData.map((item, index)=> {
+                    {SidebarData.map((item, index) => {
                         return (
                             <li key={index} className={item.cName}>
                                 <Link to={item.path}>
@@ -45,8 +44,7 @@ function Navbar () {
                     })}
                 </ul>
             </nav>
-            </IconContext.Provider>
-        </>
+        </IconContext.Provider>
     );
 }
 

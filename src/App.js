@@ -1,12 +1,11 @@
-import {Switch, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "./components/Navbar";
-import {BrowserRouter as Router} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import MoonPage from "./pages/MoonPage";
-import StarsIntro from "./components/StarsIntro";
 import Essentials from "./components/Essentials";
 import MagicPage from "./pages/MagicPage";
 import Slider from "./components/Slider";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +18,7 @@ function App() {
                 <Route path="/essentials" component={Essentials}/>
                 <Route path="/magic" component={MagicPage}/>
                 <Route path="/slider" component={Slider} />
+                <Route path="/footer" component={Footer} />
             </Switch>
         </Router>
     </>

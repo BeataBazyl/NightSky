@@ -13,7 +13,6 @@ export const StarsContainer = styled.div`
     margin-top: -100px;
 `;
 
-
 export const StarsBg = styled.div`
   position: absolute;
   top: 0;

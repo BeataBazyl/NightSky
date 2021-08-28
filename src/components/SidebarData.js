@@ -30,7 +30,8 @@ export const SidebarData = [
         title: "Gallery",
         path:"/slider",
         icon: <BsIcons.BsImageFill />,
-        cName: "nav-text"
+        cName: "nav-text",
+        id: "slider"
     },
     {
         title: "Add Some Magic",
@@ -40,7 +41,7 @@ export const SidebarData = [
     },
     {
         title: "Contact us",
-        path:"/contactUs",
+        path:"/footer",
         icon: <FaIcons.FaEnvelopeOpenText />,
         cName: "nav-text"
     },

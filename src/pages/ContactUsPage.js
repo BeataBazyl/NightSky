@@ -1,9 +1,10 @@
 import React from 'react';
+import Footer from "../components/Footer";
 
 function ContactUsPage() {
     return (
-        <div className="contactUs">
-            <h1>Contact Us</h1>
+        <div>
+            <Footer/>
         </div>
     );
 }
