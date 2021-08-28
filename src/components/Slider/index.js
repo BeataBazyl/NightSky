@@ -168,6 +168,7 @@ function Slider() {
     const [state, dispatch] = React.useReducer(slidesReducer, initialState);
 
     return (
+        <div id="slider">
         <div className="newContainer">
         <div className="slides">
             <button onClick={() => dispatch({ type: "PREV" })}>‹</button>
@@ -177,6 +178,7 @@ function Slider() {
                 return <Slide slide={slide} offset={offset} key={i} />;
             })}
             <button onClick={() => dispatch({ type: "NEXT" })}>›</button>
+        </div>
         </div>
         </div>
     );

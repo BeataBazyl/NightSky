@@ -21,7 +21,7 @@ const StarsIntro = () => {
 
     return (
         <main>
-            <StarsContainer id="home">
+            <StarsContainer>
                 <StarsBg>
                     <VideoBg autoPlay loop muted src={Video} type="video/mp4"/>
                 </StarsBg>
@@ -30,7 +30,7 @@ const StarsIntro = () => {
                     <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
                 <StarsBtnWrapper>
                     <Button
-                        to="home"
+                        to="infoSection"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
