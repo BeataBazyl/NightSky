@@ -6,6 +6,7 @@ import Essentials from "./components/Essentials";
 import MagicPage from "./pages/MagicPage";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
+import FooterPage from "./pages/FooterPage";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
                 <Route path="/essentials" component={Essentials}/>
                 <Route path="/magic" component={MagicPage}/>
                 <Route path="/slider" component={Slider} />
-                <Route path="/footer" component={Footer} />
+                <Route path="/footer" component={FooterPage} />
             </Switch>
         </Router>
     </>

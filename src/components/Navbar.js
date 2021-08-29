@@ -14,16 +14,18 @@ function Navbar () {
 
     return (
         <IconContext.Provider value={{color:"#fff"}}>
-            <div className="navbar">
-                <Link to="#" class="menu-bars">
-                    <FaIcons.FaBars onClick={showSidebar}/>
-                </Link>
-                  <div className="sideLogo">
-                    <WiIcons.WiMoonAltWaxingGibbous3 fontSize="2rem"/>
-                    <div className="logo">
-                        Night Sky
+            <div className="navbarWrapper">
+                    <div className="navbar">
+                        <Link to="#" class="menu-bars">
+                            <FaIcons.FaBars onClick={showSidebar}/>
+                        </Link>
                     </div>
-                 </div>
+                    <div className="sideLogo">
+                        <WiIcons.WiMoonAltWaxingGibbous3 fontSize="2rem"/>
+                        <div className="logo">
+                            Night Sky
+                        </div>
+                    </div>
             </div>
             <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
                 <ul className="nav-menu-items" onClick={showSidebar}>

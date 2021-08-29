@@ -1,19 +1,24 @@
-
-.navbar {
+.navbarWrapper  {
+  display: flex;
+  justify-content: space-between;
   background-color: black;
   height: 80px;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  mix-blend-mode: difference;
 }
 
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
-  display: flex;
   z-index: 100;
+  position: fixed;
 }
 
 .nav-menu {
