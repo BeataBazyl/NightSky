@@ -3,13 +3,13 @@
   justify-content: space-between;
   background-color: black;
   height: 80px;
+  z-index: 2;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
   mix-blend-mode: difference;
 }
 
@@ -17,7 +17,7 @@
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
-  z-index: 100;
+  z-index: 1;
   position: fixed;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .nav-text a:hover {
-  background-color: #2c78b7;
+  background-color: #63838F;
 }
 
 .nav-menu-item {

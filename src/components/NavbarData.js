@@ -35,6 +35,13 @@ export const NavbarData = [
         id: "slider"
     },
     {
+        title: "NASA Inspo",
+        path:"/nasa",
+        icon: <BsIcons.BsImageFill />,
+        cName: "nav-text",
+        id: "nasa"
+    },
+    {
         title: "Add Some Magic",
         path:"/magic",
         icon: <RiIcons.RiMagicLine />,

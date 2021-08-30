@@ -5,8 +5,8 @@ import MoonPage from "./pages/MoonPage";
 import Essentials from "./components/Essentials";
 import MagicPage from "./pages/MagicPage";
 import Slider from "./components/Slider";
-import Footer from "./components/Footer";
 import FooterPage from "./pages/FooterPage";
+import Nasa from "./components/Nasa";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
                 <Route path="/essentials" component={Essentials}/>
                 <Route path="/magic" component={MagicPage}/>
                 <Route path="/slider" component={Slider} />
+                <Route path="/nasa" component={Nasa} />
                 <Route path="/footer" component={FooterPage} />
             </Switch>
         </Router>

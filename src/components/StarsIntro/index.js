@@ -30,7 +30,7 @@ const StarsIntro = () => {
                     <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
                 <StarsBtnWrapper>
                     <Button
-                        to="infoSection"
+                        to="essentials"
                         onMouseEnter={onHover}
                         onMouseLeave={onHover}
                         primary="true"
