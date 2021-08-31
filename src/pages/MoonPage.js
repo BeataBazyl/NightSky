@@ -1,9 +1,10 @@
 import React from 'react';
+import Moon from "../components/Moon";
 
 function MoonPage() {
     return (
-        <div className="moon">
-            <h1>Moon</h1>
+        <div>
+            <Moon/>
         </div>
     );
 }

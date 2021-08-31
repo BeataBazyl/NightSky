@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const NasaPictureContainer =  styled.div `
-  padding: 40px 60px;
+  padding: 40px 80px;
   background: black;
 `
 export const TopLine =  styled.div `

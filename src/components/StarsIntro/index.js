@@ -18,7 +18,7 @@ const StarsIntro = () => {
     const onHover = () => {
         setHover(!hover);
     }
-
+    
     return (
         <main>
             <StarsContainer>
