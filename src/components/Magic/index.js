@@ -16,10 +16,10 @@ const Magic = () => {
             </MagicWrapper>
             <div style={{ height: "700px", width: "1000px", margin: "auto"}}>
             <ReactCompareImage
-                leftImage="../../images/sky.jpg"
+                leftImage="../../images/skyBefore.jpeg"
                 leftImageAlt="before"
                 leftImageLabel="Before Edition"
-                rightImage=".././images/sky2.jpg"
+                rightImage=".././images/skyAfter.jpeg"
                 rightImageAlt="after"
                 rightImageLabel="After Magic"/>
             </div>

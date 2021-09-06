@@ -23,7 +23,7 @@ export const NavbarData = [
     {
         title: "Essentials",
         path:"/essentials",
-        icon: <GiIcons.GiPhotoCamera />,
+        icon: <GiIcons.GiBackpack />,
         cName: "nav-text",
         id: "essentials"
     },
@@ -37,7 +37,7 @@ export const NavbarData = [
     {
         title: "NASA Inspo",
         path:"/nasa",
-        icon: <BsIcons.BsImageFill />,
+        icon: <GiIcons.GiPhotoCamera />,
         cName: "nav-text",
         id: "nasa"
     },

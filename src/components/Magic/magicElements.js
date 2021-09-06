@@ -40,11 +40,11 @@ export const MagicText = styled.div`
 `
 
 export const MagicP = styled.div`
-  max-width: 440px;
   margin: 35px;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+  max-width: 700px;
 `
 
 export const MagicIcons = styled.div`
