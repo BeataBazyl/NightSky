@@ -71,7 +71,7 @@ const Moon = () => {
             </SearchBox>
             <SearchBox>
                 <MoonBox>
-                    <MoonWidget/>
+                    {/*<MoonWidget/>*/}
                 </MoonBox>
             </SearchBox>
             </SmallerContainer>
