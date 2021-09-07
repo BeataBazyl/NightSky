@@ -35,7 +35,7 @@ export const Date =  styled.div `
 `
 
 export const NasaPictureText =  styled.div `
-  margin: 35px;
+  margin: 25px;
   font-size: 18px;
   line-height: 24px;
   color: #fff;

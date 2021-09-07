@@ -1,12 +1,12 @@
 import React from 'react';
-import Moon from "../components/Moon";
+import MoonWidget from "../components/MoonWidget/MoonWidget";
 
-function MoonPage() {
+const MoonPage = () => {
     return (
         <div>
-            <Moon/>
+            <MoonWidget/>
         </div>
     );
-}
+};
 
 export default MoonPage;

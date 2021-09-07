@@ -16,7 +16,7 @@ const slides = [
             "https://images.pexels.com/photos/2312040/pexels-photo-2312040.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     },
     {
-        title: "Full Moon Illustration",
+        title: "Full Weather Illustration",
         subtitle: "Unknown",
         description: "Lens 129.0mm ƒ/6.3 1/160s ISO 80",
         image:

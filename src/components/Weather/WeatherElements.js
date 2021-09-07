@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const WeatherWidgetContainer =  styled.div `
   padding: 40px 20px;
   background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?cs=srgb&dl=pexels-jacub-gomez-1142950.jpg&fm=jpg");
-  background-position: center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size:  cover;
@@ -13,13 +12,13 @@ export const SearchBox =  styled.div `
   min-height: 400px;
   min-width: 400px;
   border-radius: 20px;
+  background: rgb(0,0,0);
   background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(3,4,13,1) 7%, rgba(99,131,143,1) 72%);
-  box-shadow: rgba(0, 0, 0, 0.19) 0 10px 20px, rgba(0, 0, 0, 0.23) 0 6px 6px;
-  opacity: 90%;
   color: black;
   font-size: 14px;
   margin: 0 auto;
   padding: 10px;
+  box-shadow: 5px 5px 11px 4px #000000;
 `
 export const Input =  styled.input`
   padding: 10px;
@@ -63,12 +62,6 @@ export const WeatherBox =  styled.div`
   color: white;
   text-align: center;`
 
-export const MoonBox =  styled.div`
-  font-size: 1.5rem;
-  color: white;
-  text-align: center;
-`
-
 export const Temp =  styled.div`
   font-size: 3.5rem;
   font-weight: bold;
@@ -86,7 +79,6 @@ export const Clouds =  styled.div`
   color: white;
   font-weight: bolder;
 `
-
 export const CoordsAndClouds =  styled.div`
     color: #fff;
     font-weight: bolder;
@@ -94,17 +86,6 @@ export const CoordsAndClouds =  styled.div`
     margin-bottom: 30px;
     font-size: 3rem;
 `
-
-export const MoonPhase =  styled.div`
-  font-size: 1.25rem;
-  color: white;
-  text-align: center;`
-
-export const MoonLight =  styled.div`
-  font-size: 1.25rem;
-  color: white;
-  text-align: center;`
-
 export const Headline =  styled.h1`
   margin: 20px 50px 40px 50px;
   font-size: 48px;
@@ -128,27 +109,23 @@ export const Smallheader =  styled.p`
   margin-bottom: 25px;
   text-align: center;
 `
-
 export const SmallerContainer =  styled.section`
     display: flex;
     justify-content: space-between;
     max-width: 80%;
     margin: 20px auto;
 `
-
 export const GeoTitle =  styled.h1`
   font-size: 1.5rem;
   color: white;
   font-weight: bolder;
 `
-
 export const Parameteres =  styled.p`
     font-size: 0.9rem;
     text-align: center;
     padding-top: 10px;
     margin-bottom: 10px;
 `
-
 export const CloudIcon =  styled.p`
     font-size: 5rem;
     margin-bottom: -25px;

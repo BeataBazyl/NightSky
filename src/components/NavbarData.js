@@ -4,6 +4,7 @@ import * as AiIcons from "react-icons/ai";
 import * as BsIcons from "react-icons/bs";
 import * as GiIcons from "react-icons/gi";
 import * as RiIcons from "react-icons/ri";
+import * as TiIcons from "react-icons/ti";
 
 export const NavbarData = [
     {
@@ -14,9 +15,16 @@ export const NavbarData = [
         id: "home"
     },
     {
+        title: "Weather",
+        path:"/weather",
+        icon: <TiIcons.TiWeatherCloudy />,
+        cName: "nav-text",
+        id: "weather"
+    },
+    {
         title: "Moon",
         path:"/moon",
-        icon: <FaIcons.FaMoon />,
+        icon: <RiIcons.RiMoonClearLine />,
         cName: "nav-text",
         id: "moon"
     },

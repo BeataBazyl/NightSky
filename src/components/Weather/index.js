@@ -10,17 +10,16 @@ import {WeatherWidgetContainer,
     Location,
     Temp,
     WeatherBox,
-    SmallerContainer, CoordsAndClouds, GeoTitle, Parameteres, MoonBox, CloudIcon} from "./MoonElements";
+    SmallerContainer, CoordsAndClouds, GeoTitle, Parameteres, CloudIcon} from "./WeatherElements";
 import * as WiIcons from "react-icons/wi";
 import * as FaIcons from "react-icons/fa";
-import MoonWidget from "../MoonWidget/MoonWidget";
 
 const api = {
     key: "fa53c1000ce55b3862fa4d4f16610eb1",
     base: "https://api.openweathermap.org/data/2.5/",
 }
 
-const Moon = () => {
+const Weather = () => {
     const [finding, setFinding] = useState("");
     const [weather, setWeather] = useState({});
     let date = String(new window.Date());
@@ -40,8 +39,8 @@ const Moon = () => {
 
     return (
         <WeatherWidgetContainer>
-            <Headline>Is it today good weather for hunting stars and explore sky?</Headline>
-            <Smallheader>Let's check out!</Smallheader>
+            <Headline>Let see if today is clear sky and good weather condition for hunting stars!</Headline>
+            <Smallheader>check out!</Smallheader>
             <SmallerContainer>
             <SearchBox>
                 <SearchBoxBar>
@@ -52,10 +51,10 @@ const Moon = () => {
                     value={finding}
                     onKeyPress={search}/>
                 </SearchBoxBar>
-                <Date>{date}</Date>
                 <WeatherBox>
                     {(typeof weather.main != "undefined") ? (
                     <>
+                    <Date>{date}</Date>
                     <Location>{weather.name}, {weather.sys.country}</Location>
                     <Temp>{Math.round(weather.main.temp)}&#8451;</Temp>
                     <CoordsAndClouds>
@@ -69,14 +68,9 @@ const Moon = () => {
                     ) : ("")}
                 </WeatherBox>
             </SearchBox>
-            <SearchBox>
-                <MoonBox>
-                    {/*<MoonWidget/>*/}
-                </MoonBox>
-            </SearchBox>
             </SmallerContainer>
         </WeatherWidgetContainer>
     );
 }
 
-export default Moon;
+export default Weather;
