@@ -18,7 +18,7 @@ const StarsIntro = () => {
     const onHover = () => {
         setHover(!hover);
     }
-    
+
     return (
         <main>
             <StarsContainer>
@@ -27,7 +27,7 @@ const StarsIntro = () => {
                 </StarsBg>
                 <StarsContent>
                     <StarsH1>Are you redy to be inspired?</StarsH1>
-                    <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
+                        <StarsP>Explore night sky and start making amazing photoshoots</StarsP>
                 <StarsBtnWrapper>
                     <Button
                         to="essentials"

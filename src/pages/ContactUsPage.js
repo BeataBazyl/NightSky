@@ -5,7 +5,6 @@ import Contact from "../components/ContactUs";
 function ContactUsPage() {
     return (
         <div>
-            <Contact/>
             <Footer/>
         </div>
     );

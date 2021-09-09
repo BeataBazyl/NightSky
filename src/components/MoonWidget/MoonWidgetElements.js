@@ -1,14 +1,5 @@
 import styled from 'styled-components'
 
-export const MoonWidgetContainer =  styled.div `
-  padding: 40px 20px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?cs=srgb&dl=pexels-jacub-gomez-1142950.jpg&fm=jpg");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size:  cover;
-  -o-background-size: cover;
-`
-
 export const Input2 =  styled.input`
   padding: 10px;
   font-size: 18px;

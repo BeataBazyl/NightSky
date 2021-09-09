@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {WeatherWidgetContainer,
-    Smallheader,
+import {Smallheader,
     Headline,
     SearchBox,
     Input,
@@ -10,7 +9,7 @@ import {WeatherWidgetContainer,
     Location,
     Temp,
     WeatherBox,
-    SmallerContainer, CoordsAndClouds, GeoTitle, Parameteres, CloudIcon} from "./WeatherElements";
+    SmallerContainer, CoordsAndClouds, GeoTitle, Parameteres, CloudIcon, WidgetContainer} from "./WeatherElements";
 import * as WiIcons from "react-icons/wi";
 import * as FaIcons from "react-icons/fa";
 
@@ -38,7 +37,7 @@ const Weather = () => {
     }
 
     return (
-        <WeatherWidgetContainer>
+        <WidgetContainer>
             <Headline>Let see if today is clear sky and good weather condition for hunting stars!</Headline>
             <Smallheader>check out!</Smallheader>
             <SmallerContainer>
@@ -69,7 +68,7 @@ const Weather = () => {
                 </WeatherBox>
             </SearchBox>
             </SmallerContainer>
-        </WeatherWidgetContainer>
+        </WidgetContainer>
     );
 }
 

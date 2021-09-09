@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from 'react-fade-in';
 import {
     FooterContainer,
     FooterWrap,
@@ -23,24 +24,30 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>Contact Us</FooterLinkTitle>
-                        <FooterLink to="about"><RiIcons.RiMessage2Line/> Contact form</FooterLink>
+                        <FadeIn>
+                        <FooterLink to="form"><RiIcons.RiMessage2Line/> Contact form</FooterLink>
                         <FooterLink to="#"><AiIcons.AiOutlineHome/> Adress Poland, Warsaw, street Suwak 14</FooterLink>
                         <FooterLink to="#"><GoIcons.GoMail/> via e-mail adress</FooterLink>
                         <FooterLink to="#"><FiIcons.FiPhoneCall/> +48 XXX XXX XXX </FooterLink>
+                        </FadeIn>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>More About Us</FooterLinkTitle>
+                        <FadeIn>
                         <FooterLink to="#">About Project</FooterLink>
                         <FooterLink to="#">Partners</FooterLink>
+                        </FadeIn>
                     </FooterLinkItems>
                     <FooterLinkItems>
                         <FooterLinkTitle>Quick Links</FooterLinkTitle>
                         <ul>
+                            <FadeIn>
                         <li><FooterLink to="home" >Home</FooterLink></li>
                         <li><FooterLink to="moon">Moon</FooterLink></li>
                         <li><FooterLink to="essentials">Essentials</FooterLink></li>
                         <li><FooterLink to="slider">Gallery</FooterLink></li>
                         <li><FooterLink to="magic">Postproduction</FooterLink></li>
+                            </FadeIn>
                         </ul>
                     </FooterLinkItems>
                 </FooterLinksWrapper>

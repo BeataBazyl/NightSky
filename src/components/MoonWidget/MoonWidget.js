@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import {WeatherBox, Text, MoonParameters, MoonFlex, MoonContainer, MoonWidgetContainer} from "./MoonWidgetElements";
+import {WeatherBox, Text, MoonParameters, MoonFlex, MoonContainer} from "./MoonWidgetElements";
 import {
     Date,
     Headline, Input, Location,
     SearchBoxBar,
     SmallerContainer,
     Smallheader,
-    WeatherWidgetContainer,
-    SearchBox
+    SearchBox,
+    WidgetContainer
 } from "../Weather/WeatherElements";
 
 const api2 = {
@@ -31,7 +31,7 @@ const MoonWidget = () => {
     }
 
     return (
-        <MoonWidgetContainer>
+        <WidgetContainer>
             <Headline>Do you want to give it a try to photograph the moon?</Headline>
             <Smallheader>Check the parameters of the Moon to choose the best settings tonight!</Smallheader>
             <SmallerContainer>
@@ -48,15 +48,16 @@ const MoonWidget = () => {
                         {(typeof moon.location != "undefined") ? (
                             <MoonContainer>
                                 <Date>{moon.date}, {moon.current_time}</Date>
-                                <Location>{moon.location.state}</Location>
+                                <Location>{moon.location.country} </Location>
                                 <MoonFlex>
                                 <MoonParameters>
                                     <Text>Day lenght: {moon.day_length}</Text>
                                     <Text>Moon rise: {moon.moonrise}</Text>
                                     <Text>Moon set: {moon.moonset}</Text>
-                                    <Text>Moon distance: {moon.moon_distance}</Text>
-                                    <Text>Moon altitude: {moon.moon_altitude}</Text>
-                                    <Text>Azimuth: {moon.moon_azimuth}</Text>
+                                    <Text>Moon distance: {Math.floor(moon.moon_distance * 100)/100}</Text>
+                                    <Text>Moon altitude: {Math.floor(moon.moon_altitude * 100)/100}</Text>
+                                    <Text>Azimuth: {Math.floor(moon.moon_azimuth*100)/100}</Text>
+                                    <Text>Parallactic angle: {Math.floor(moon.moon_parallactic_angle*100)/100}</Text>
                                 </MoonParameters>
                                 <img src="images/moon.png" alt="moon"
                                                 style={{
@@ -70,7 +71,7 @@ const MoonWidget = () => {
                     </WeatherBox>
                 </SearchBox>
             </SmallerContainer>
-        </MoonWidgetContainer>
+        </WidgetContainer>
     );
 }
 

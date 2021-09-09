@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const WeatherWidgetContainer =  styled.div `
+export const WidgetContainer =  styled.div `
   padding: 40px 20px;
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?cs=srgb&dl=pexels-jacub-gomez-1142950.jpg&fm=jpg");
+  background: url("https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?cs=srgb&dl=pexels-jacub-gomez-1142950.jpg&fm=jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size:  cover;
@@ -102,12 +102,13 @@ export const Headline =  styled.h1`
 export const Smallheader =  styled.p`
   color: #fff;
   font-size: 1.5rem;
-  line-height: 16px;
+  line-height: 28px;
   font-weight: lighter;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 25px;
+  margin: 25px auto;
   text-align: center;
+  width: 600px;
 `
 export const SmallerContainer =  styled.section`
     display: flex;

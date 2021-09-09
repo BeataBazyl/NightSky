@@ -5,6 +5,7 @@ import StarsIntro from "../components/StarsIntro";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
+
     return (
         <div id="home">
             <StarsIntro/>
