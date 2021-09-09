@@ -21,11 +21,10 @@ export const Text =  styled.div`
   color: #fff;
   padding: 5px;
   font-weight: bolder;
-  text-align: center;
+  text-align: left;
 `
 
-export const MoonContainer =  styled.div`
-`
+export const MoonContainer =  styled.div``
 
 export const MoonParameters =  styled.div`
   margin-top: 30px;

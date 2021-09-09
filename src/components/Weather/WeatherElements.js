@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const WidgetContainer =  styled.div `
   padding: 40px 20px;
@@ -12,8 +12,9 @@ export const SearchBox =  styled.div `
   min-height: 400px;
   min-width: 400px;
   border-radius: 20px;
-  background: rgb(0,0,0);
-  background: linear-gradient(4deg, rgba(2,0,36,1) 0%, rgba(3,4,13,1) 7%, rgba(99,131,143,1) 72%);
+  background-image: linear-gradient(180deg, rgba(0,0,0,0.8645833333333334) 33%, rgba(99,131,143,0.2959558823529411) 92%);
+  background-size: cover;
+  background-position: bottom;
   color: black;
   font-size: 14px;
   margin: 0 auto;

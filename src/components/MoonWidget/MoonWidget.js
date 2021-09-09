@@ -7,7 +7,7 @@ import {
     SmallerContainer,
     Smallheader,
     SearchBox,
-    WidgetContainer
+    WidgetContainer,
 } from "../Weather/WeatherElements";
 
 const api2 = {
@@ -54,10 +54,10 @@ const MoonWidget = () => {
                                     <Text>Day lenght: {moon.day_length}</Text>
                                     <Text>Moon rise: {moon.moonrise}</Text>
                                     <Text>Moon set: {moon.moonset}</Text>
-                                    <Text>Moon distance: {Math.floor(moon.moon_distance * 100)/100}</Text>
-                                    <Text>Moon altitude: {Math.floor(moon.moon_altitude * 100)/100}</Text>
-                                    <Text>Azimuth: {Math.floor(moon.moon_azimuth*100)/100}</Text>
-                                    <Text>Parallactic angle: {Math.floor(moon.moon_parallactic_angle*100)/100}</Text>
+                                    <Text>Distance beetween Moon and Earth: {Math.floor(moon.moon_distance * 100)/100}</Text>
+                                    <Text>Moon altitude: {Math.floor(moon.moon_altitude * 100)/100} - </Text>
+                                    <Text>how far up in the sky the Moon appears</Text>
+                                    <Text>The angle between a moon and the North (azimuth): {Math.floor(moon.moon_azimuth*100)/100} - </Text>
                                 </MoonParameters>
                                 <img src="images/moon.png" alt="moon"
                                                 style={{
