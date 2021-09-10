@@ -31,6 +31,3 @@ export const Input = styled.input `
   width: 350px;
   height: 30px;
 `
-
-export const rightSide = styled.div ``
-export const leftSide = styled.div ``

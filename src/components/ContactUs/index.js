@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {useForm } from 'react-hook-form';
 import FadeIn from 'react-fade-in';
 import svgContact from '../../images/svg-11.svg';
-import {FormField, ContactContainer, Input, FormContent, leftSide, rightSide} from "./ContactUsElements";
+import {FormField, ContactContainer, Input, FormContent} from "./ContactUsElements";
 import {Button} from "../ButtonElements";
 import {Headline} from "../Weather/WeatherElements";
 import * as GrIcons from "react-icons/gr";
@@ -30,7 +30,7 @@ const Contact = () => {
                     }>
                     Suscribe to our newsletter</Headline>
                 <FormContent>
-                    <rightSide>
+                    <>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <Input type="text" placeholder="First name" {...register("First name", {required: true, maxLength: 80})} />
                             <Input type="text" placeholder="Last name" {...register("Last name", {required: true, maxLength: 100})} />
@@ -40,13 +40,13 @@ const Contact = () => {
                                 margin: "10px auto"}}
                             >Send</Button>
                         </form>
-                    </rightSide>
-                    <leftSide>
+                    </>
+                    <>
                         <img src={svgContact} alt="contact" style={{
                             margin: "10px auto 0",
                             width: "400px",
                         }}/>
-                    </leftSide>
+                    </>
                 </FormContent>
             </FormField>: null }
             </FadeIn>

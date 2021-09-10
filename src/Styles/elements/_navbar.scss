@@ -4,13 +4,13 @@
   background-color: black;
   height: 80px;
   z-index: 2;
+  mix-blend-mode: difference;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  mix-blend-mode: difference;
 }
 
 .menu-bars {
