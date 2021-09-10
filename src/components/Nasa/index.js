@@ -28,7 +28,7 @@ const Nasa = () => {
                                             {picture.explanation}
                                         </NasaPictureText>
                                         <NasaPicture>
-                                            <img src={picture.url} alt="photo of the day NASA" width="500px" height="500px" backgroundSize="cover"/>
+                                            <img src={picture.url} alt="sky" width="500px" height="500px" backgroundSize="cover"/>
                                         </NasaPicture>
                                     </PictureContentWrap>
             </NasaPictureContainer>

@@ -3,7 +3,6 @@ import ReactCompareImage from 'react-compare-image';
 import {MagicContainer, MagicWrapper, MagicHeader, MagicText, MagicP} from "./magicElements";
 import {MagicIconLink, MagicIcons} from "./magicElements";
 import {SiAdobelightroomclassic, SiAdobephotoshop} from "react-icons/all";
-import {Link} from "react-router-dom";
 
 const Magic = () => {
     return (

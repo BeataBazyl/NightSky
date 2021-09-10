@@ -26,8 +26,10 @@ export const FormContent = styled.div `
 
 export const Input = styled.input `
   padding: 10px;
-  font-size: 1.5rem;
-  margin: 10px auto;
+  font-size: 1.25rem;
+  margin: 10px;
+  width: 350px;
+  height: 30px;
 `
 
 export const rightSide = styled.div ``

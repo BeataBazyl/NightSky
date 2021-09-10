@@ -4,9 +4,6 @@ export const WidgetContainer =  styled.div `
   padding: 40px 20px;
   background: url("https://images.pexels.com/photos/1142950/pexels-photo-1142950.jpeg?cs=srgb&dl=pexels-jacub-gomez-1142950.jpg&fm=jpg");
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size:  cover;
-  -o-background-size: cover;
 `
 export const SearchBox =  styled.div `
   min-height: 400px;

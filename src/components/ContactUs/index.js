@@ -5,17 +5,24 @@ import svgContact from '../../images/svg-11.svg';
 import {FormField, ContactContainer, Input, FormContent, leftSide, rightSide} from "./ContactUsElements";
 import {Button} from "../ButtonElements";
 import {Headline} from "../Weather/WeatherElements";
-
+import * as GrIcons from "react-icons/gr";
 
 const Contact = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const {register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
+
+    const [show, setShow]=useState(true)
 
     return (
         <ContactContainer>
             <FadeIn>
-            <FormField>
+                {show?<FormField>
+                <GrIcons.GrClose style={{
+                    position: "relative",
+                    float: "right",
+                    color: "white",
+                    fontSize: "2rem"}} onClick={()=> setShow(false)}/>
                 <Headline style={{
                     color:"#fff",
                     textShadow: "2px 0px 9px rgba(1, 1, 1, 1)",
@@ -41,7 +48,7 @@ const Contact = () => {
                         }}/>
                     </leftSide>
                 </FormContent>
-            </FormField>
+            </FormField>: null }
             </FadeIn>
         </ContactContainer>
     );

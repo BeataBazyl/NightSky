@@ -25,7 +25,7 @@ const Footer = () => {
                     <FooterLinkItems>
                         <FooterLinkTitle>Contact Us</FooterLinkTitle>
                         <FadeIn>
-                        <FooterLink to="form"><RiIcons.RiMessage2Line/> Contact form</FooterLink>
+                        <FooterLink to="#"><RiIcons.RiMessage2Line/> Contact form</FooterLink>
                         <FooterLink to="#"><AiIcons.AiOutlineHome/> Adress Poland, Warsaw, street Suwak 14</FooterLink>
                         <FooterLink to="#"><GoIcons.GoMail/> via e-mail adress</FooterLink>
                         <FooterLink to="#"><FiIcons.FiPhoneCall/> +48 XXX XXX XXX </FooterLink>
@@ -42,7 +42,7 @@ const Footer = () => {
                         <FooterLinkTitle>Quick Links</FooterLinkTitle>
                         <ul>
                             <FadeIn>
-                        <li><FooterLink to="home" >Home</FooterLink></li>
+                        <li><FooterLink to="#" >Home</FooterLink></li>
                         <li><FooterLink to="moon">Moon</FooterLink></li>
                         <li><FooterLink to="essentials">Essentials</FooterLink></li>
                         <li><FooterLink to="slider">Gallery</FooterLink></li>
