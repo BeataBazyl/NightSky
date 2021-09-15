@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/NightSky/static/css/main.5591ce72.chunk.css",
+    "main.js": "/NightSky/static/js/main.692e099e.chunk.js",
+    "main.js.map": "/NightSky/static/js/main.692e099e.chunk.js.map",
+    "runtime-main.js": "/NightSky/static/js/runtime-main.86106579.js",
+    "runtime-main.js.map": "/NightSky/static/js/runtime-main.86106579.js.map",
+    "static/js/2.1c8b6d95.chunk.js": "/NightSky/static/js/2.1c8b6d95.chunk.js",
+    "static/js/2.1c8b6d95.chunk.js.map": "/NightSky/static/js/2.1c8b6d95.chunk.js.map",
+    "index.html": "/NightSky/index.html",
+    "static/css/main.5591ce72.chunk.css.map": "/NightSky/static/css/main.5591ce72.chunk.css.map",
+    "static/js/2.1c8b6d95.chunk.js.LICENSE.txt": "/NightSky/static/js/2.1c8b6d95.chunk.js.LICENSE.txt",
+    "static/media/moon.cb07d180.png": "/NightSky/static/media/moon.cb07d180.png",
+    "static/media/skyAfter.a738d7d9.png": "/NightSky/static/media/skyAfter.a738d7d9.png",
+    "static/media/skyBefore.4d909084.png": "/NightSky/static/media/skyBefore.4d909084.png",
+    "static/media/svg-1.svg": "/NightSky/static/media/svg-1.0ed43a91.svg",
+    "static/media/svg-11.d3c8bc08.svg": "/NightSky/static/media/svg-11.d3c8bc08.svg",
+    "static/media/svg-2.svg": "/NightSky/static/media/svg-2.8885c815.svg",
+    "static/media/svg-3.svg": "/NightSky/static/media/svg-3.58796b20.svg",
+    "static/media/svg-4.41e3a4e7.svg": "/NightSky/static/media/svg-4.41e3a4e7.svg",
+    "static/media/svg-6.afaf0635.svg": "/NightSky/static/media/svg-6.afaf0635.svg",
+    "static/media/svg-7.svg": "/NightSky/static/media/svg-7.59e48a57.svg",
+    "static/media/svg-9.1059a97b.svg": "/NightSky/static/media/svg-9.1059a97b.svg",
+    "static/media/video.154e0e03.mp4": "/NightSky/static/media/video.154e0e03.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.86106579.js",
+    "static/js/2.1c8b6d95.chunk.js",
+    "static/css/main.5591ce72.chunk.css",
+    "static/js/main.692e099e.chunk.js"
+  ]
+}

@@ -1,8 +1,11 @@
 import React from 'react';
-import ReactCompareImage from 'react-compare-image';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import {MagicContainer, MagicWrapper, MagicHeader, MagicText, MagicP} from "./magicElements";
 import {MagicIconLink, MagicIcons} from "./magicElements";
 import {SiAdobelightroomclassic, SiAdobephotoshop} from "react-icons/all";
+import imageAfter from "../../images/skyAfter.png";
+import imageBefore from "../../images/skyBefore.png";
+
 
 const Magic = () => {
     return (
@@ -14,13 +17,10 @@ const Magic = () => {
                     Check out below how wonderful effect you can expect in postproduction!</MagicP>
             </MagicWrapper>
             <div style={{ height: "700px", width: "1000px", margin: "auto"}}>
-            <ReactCompareImage
-                leftImage="../../images/skyBefore.jpeg"
-                leftImageAlt="before"
-                leftImageLabel="Before Edition"
-                rightImage=".././images/skyAfter.jpeg"
-                rightImageAlt="after"
-                rightImageLabel="After Magic"/>
+                <ReactCompareSlider
+                    itemOne={<ReactCompareSliderImage src={imageAfter} srcSet="..." alt="Before" style={{ height: "700px", width: "1000px", margin: "auto"}} />}
+                    itemTwo={<ReactCompareSliderImage src={imageBefore} srcSet="..." alt="After" style={{ height: "700px", width: "1000px", margin: "auto"}} />}
+                />
             </div>
             <MagicWrapper>
                 <MagicText>If you wonder what kind of programs you can use to edit your photos, look below</MagicText>

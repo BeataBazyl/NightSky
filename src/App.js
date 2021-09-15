@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import WeatherPage from "./pages/WeatherPage";
 import Essentials from "./components/Essentials";
@@ -8,12 +7,14 @@ import Slider from "./components/Slider";
 import FooterPage from "./pages/FooterPage";
 import Nasa from "./components/Nasa";
 import MoonPage from "./pages/MoonPage";
+import React from "react";
+import Entry from "./components/EntryPage";
 
 function App() {
   return (
     <>
         <Router>
-            <Navbar/>
+            <Entry/>
             <Switch>
                 <Route path="/" exact component={HomePage}/>
                 <Route path="/weather" component={WeatherPage}/>

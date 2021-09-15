@@ -9,6 +9,7 @@ import {
     SearchBox,
     WidgetContainer,
 } from "../Weather/WeatherElements";
+import moonPic from "../../images/moon.png";
 
 const api2 = {
     key2: "c197cc54ce6340edadacd0890b38da83"
@@ -59,7 +60,7 @@ const MoonWidget = () => {
                                     <Text>how far up in the sky the Moon appears</Text>
                                     <Text>The angle between a moon and the North (azimuth): {Math.floor(moon.moon_azimuth*100)/100} - </Text>
                                 </MoonParameters>
-                                <img src="images/moon.png" alt="moon"
+                                <img src={moonPic} alt="moon"
                                                 style={{
                                                     width:"250px",
                                                     borderRadius:"50%",
