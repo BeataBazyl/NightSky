@@ -8,23 +8,26 @@ import FooterPage from "./pages/FooterPage";
 import Nasa from "./components/Nasa";
 import MoonPage from "./pages/MoonPage";
 import React from "react";
-import Entry from "./components/EntryPage";
+import Navbar from "./components/Navbar";
+import StarsIntro from "./components/StarsIntro";
+import {IconContext} from "react-icons";
 
 function App() {
   return (
     <>
         <Router>
-            <Entry/>
-            <Switch>
-                <Route path="/" exact component={HomePage}/>
-                <Route path="/weather" component={WeatherPage}/>
-                <Route path="/moon" component={MoonPage}/>
-                <Route path="/essentials" component={Essentials}/>
-                <Route path="/magic" component={MagicPage}/>
-                <Route path="/slider" component={Slider} />
-                <Route path="/nasa" component={Nasa} />
-                <Route path="/footer" component={FooterPage} />
-            </Switch>
+            <Navbar/>
+                <Switch>
+                    <Route path="/" exact component={HomePage}/>
+                    <Route path="/weather" component={WeatherPage}/>
+                    <Route path="/moon" component={MoonPage}/>
+                    <Route path="/essentials" component={Essentials}/>
+                    <Route path="/magic" component={MagicPage}/>
+                    <Route path="/slider" component={Slider} />
+                    <Route path="/nasa" component={Nasa} />
+                    <Route path="/footer" component={FooterPage} />
+                    <StarsIntro/>
+                </Switch>
         </Router>
     </>
   );

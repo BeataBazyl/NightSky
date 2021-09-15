@@ -6,6 +6,7 @@ import ".././Styles/elements/_navbar.scss";
 import * as WiIcons from "react-icons/wi";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
+import StarsIntro from "./StarsIntro";
 
 function Navbar () {
     const [sidebar, setSidebar] = useState(false)
