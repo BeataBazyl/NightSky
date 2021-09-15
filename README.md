@@ -9,7 +9,7 @@ Used dependencies:
 
   react-bootstarap, styled-components and others 
 
-You can view a live demo at - 
+You can view a live demo at - https://beatabazyl.github.io/NightSky/
 
 To get the app running locally:
 <li>Clone this repo
