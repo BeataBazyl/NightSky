@@ -1,15 +1,18 @@
 {
   "files": {
     "main.css": "/NightSky/static/css/main.5591ce72.chunk.css",
-    "main.js": "/NightSky/static/js/main.0eadf962.chunk.js",
-    "main.js.map": "/NightSky/static/js/main.0eadf962.chunk.js.map",
+    "main.js": "/NightSky/static/js/main.153bba99.chunk.js",
+    "main.js.map": "/NightSky/static/js/main.153bba99.chunk.js.map",
     "runtime-main.js": "/NightSky/static/js/runtime-main.86106579.js",
     "runtime-main.js.map": "/NightSky/static/js/runtime-main.86106579.js.map",
-    "static/js/2.ffc3aeeb.chunk.js": "/NightSky/static/js/2.ffc3aeeb.chunk.js",
-    "static/js/2.ffc3aeeb.chunk.js.map": "/NightSky/static/js/2.ffc3aeeb.chunk.js.map",
+    "static/js/2.30e0ff98.chunk.js": "/NightSky/static/js/2.30e0ff98.chunk.js",
+    "static/js/2.30e0ff98.chunk.js.map": "/NightSky/static/js/2.30e0ff98.chunk.js.map",
     "index.html": "/NightSky/index.html",
     "static/css/main.5591ce72.chunk.css.map": "/NightSky/static/css/main.5591ce72.chunk.css.map",
-    "static/js/2.ffc3aeeb.chunk.js.LICENSE.txt": "/NightSky/static/js/2.ffc3aeeb.chunk.js.LICENSE.txt",
+    "static/js/2.30e0ff98.chunk.js.LICENSE.txt": "/NightSky/static/js/2.30e0ff98.chunk.js.LICENSE.txt",
+    "static/media/moon.cb07d180.png": "/NightSky/static/media/moon.cb07d180.png",
+    "static/media/skyAfter.a738d7d9.png": "/NightSky/static/media/skyAfter.a738d7d9.png",
+    "static/media/skyBefore.4d909084.png": "/NightSky/static/media/skyBefore.4d909084.png",
     "static/media/svg-1.svg": "/NightSky/static/media/svg-1.0ed43a91.svg",
     "static/media/svg-11.d3c8bc08.svg": "/NightSky/static/media/svg-11.d3c8bc08.svg",
     "static/media/svg-2.svg": "/NightSky/static/media/svg-2.8885c815.svg",
@@ -22,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.86106579.js",
-    "static/js/2.ffc3aeeb.chunk.js",
+    "static/js/2.30e0ff98.chunk.js",
     "static/css/main.5591ce72.chunk.css",
-    "static/js/main.0eadf962.chunk.js"
+    "static/js/main.153bba99.chunk.js"
   ]
 }
